@@ -23,9 +23,7 @@ export class LogDataController{
                     res.send(err);
                 }
                 res.json(logData);
-            }).sort ({time: -1}, (err, data) => {
-                console.log (err);
-            });
+            }).sort ({time: -1});
         }
     }
 
