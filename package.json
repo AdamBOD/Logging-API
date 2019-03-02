@@ -1,0 +1,29 @@
+{
+  "name": "mhealth-api",
+  "version": "1.0.0",
+  "description": "Node.ts API for mHealth FYP app",
+  "main": "./dist/server.js",
+  "dependencies": {
+    "@types/express": "^4.16.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongodb": "^3.1.8",
+    "mongoose": "^5.3.6",
+    "nodemon": "^1.18.4",
+    "typescript": "^3.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "tsc",
+    "postinstall": "npm run build",
+    "dev": "ts-node ./lib/server.ts",
+    "start": "nodemon ./dist/server.js",
+    "prod": "npm run build && npm run start",
+    "serve": "node ./dist/server.js"
+  },
+  "engines": {
+    "node": "^8.12.0"
+  },
+  "author": "Adam Barry-O'Donovan",
+  "license": "ISC"
+}
